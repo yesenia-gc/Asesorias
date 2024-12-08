@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Asesoría en Diseño de Interiores</title>
+    <link rel="stylesheet" href="../css/Registro.css">
+</head>
+<body>
+   
+    
+    <main>
+        <section class="registro">
+            <div class="registro-container">
+                <h1>Regístrate para tu Asesoría de Diseño Personalizada</h1>
+
+                <form action="registro.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password">Confirmar contraseña:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo_propiedad">Tipo de propiedad:</label>
+                        <select id="tipo_propiedad" name="tipo_propiedad" required>
+                            <option value="casa">Casa</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="oficina">Oficina</option>
+                            <option value="local_comercial">Local comercial</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estilo">Estilo de diseño preferido:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="minimalista" name="estilo[]" value="Minimalista">
+                            <label for="minimalista">Minimalista</label>
+
+                            <input type="checkbox" id="contemporaneo" name="estilo[]" value="Contemporáneo">
+                            <label for="contemporaneo">Contemporáneo</label>
+
+                            <input type="checkbox" id="clasico" name="estilo[]" value="Clásico">
+                            <label for="clasico">Clásico</label>
+
+                            <input type="checkbox" id="rustico" name="estilo[]" value="Rústico">
+                            <label for="rustico">Rústico</label>
+
+                            <input type="checkbox" id="industrial" name="estilo[]" value="Industrial">
+                            <label for="industrial">Industrial</label>
+
+                            <input type="checkbox" id="moderno" name="estilo[]" value="Moderno">
+                            <label for="moderno">Moderno</label>
+
+                            <input type="checkbox" id="eclectico" name="estilo[]" value="Ecléctico">
+                            <label for="eclectico">Ecléctico</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto estimado:</label>
+                        <input type="text" id="presupuesto" name="presupuesto" placeholder="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="objetivo">Objetivo principal del diseño:</label>
+                        <textarea id="objetivo" name="objetivo" placeholder=""></textarea>
+                    </div>
+
+                    <button type="submit">Crear cuenta y empezar</button>
+                </form>
+
+                <p class="login-link">¿Ya tienes cuenta? <a href="./Iniciosesion.html">Inicia sesión aquí</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Empresa de Diseño de Interiores. Todos los derechos reservados.</p>
+        <a href="privacidad.html">Política de privacidad</a> | <a href="terminos.html">Términos y condiciones</a>
+    </footer>
+</body>
+</html>
